@@ -11,15 +11,15 @@ class LoadingScreen extends StatefulWidget {
 }
 
 class LoadingScreenState extends State<LoadingScreen> {
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   try {
-  //     navigateToHome();
-  //   } catch (e) {
-  //     print('Error navigating to home: $e');
-  //   }
-  // }
+  @override
+  void initState() {
+    super.initState();
+    try {
+      navigateToHome();
+    } catch (e) {
+      print('Error navigating to home: $e');
+    }
+  }
 
   Future<void> navigateToHome() async {
     try {
